@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5b6e8f"/></marker>
+  </defs>
+  <rect width="900" height="560" fill="#0b1220"/>
+  <text x="450" y="34" fill="#e2e8f0" font-size="20" font-weight="700" text-anchor="middle">SARTHI-ETA — API Architecture (demo config, spec §19 workflow)</text>
+
+  <!-- left: data sources -->
+  <rect x="30" y="70" width="200" height="300" rx="10" fill="#121c30" stroke="#22304d"/>
+  <text x="130" y="96" fill="#8ea0bd" font-size="13" text-anchor="middle" font-weight="600">DATA SOURCES</text>
+  <rect x="46" y="110" width="168" height="44" rx="7" fill="#1e3a5f"/><text x="130" y="128" fill="#cfe3ff" font-size="12" text-anchor="middle">Live GPS / RTIS feed</text><text x="130" y="144" fill="#7fa3d0" font-size="10" text-anchor="middle">(simulated: app/sim.py)</text>
+  <rect x="46" y="162" width="168" height="44" rx="7" fill="#1e3a5f"/><text x="130" y="180" fill="#cfe3ff" font-size="12" text-anchor="middle">Operations events</text><text x="130" y="196" fill="#7fa3d0" font-size="10" text-anchor="middle">congestion · TSR · blocks</text>
+  <rect x="46" y="214" width="168" height="44" rx="7" fill="#1e3a5f"/><text x="130" y="232" fill="#cfe3ff" font-size="12" text-anchor="middle">Weather feed</text><text x="130" y="248" fill="#7fa3d0" font-size="10" text-anchor="middle">fog · rain · visibility</text>
+  <rect x="46" y="266" width="168" height="52" rx="7" fill="#14532d"/><text x="130" y="286" fill="#bbf7d0" font-size="12" text-anchor="middle">Historical book (real)</text><text x="130" y="302" fill="#86efac" font-size="10" text-anchor="middle">DA323 sectional medians</text>
+  <rect x="46" y="326" width="168" height="30" rx="7" fill="#1e3a5f"/><text x="130" y="345" fill="#cfe3ff" font-size="12" text-anchor="middle">Actual arrivals (ingest)</text>
+
+  <!-- middle: api + engine -->
+  <rect x="290" y="70" width="330" height="180" rx="10" fill="#121c30" stroke="#2dd4bf"/>
+  <text x="455" y="96" fill="#2dd4bf" font-size="13" text-anchor="middle" font-weight="600">FastAPI SERVICE  /api/v1  (app/main.py)</text>
+  <rect x="306" y="108" width="145" height="30" rx="6" fill="#22304d"/><text x="378" y="128" fill="#e2e8f0" font-size="11" text-anchor="middle">trains · live · eta · route</text>
+  <rect x="459" y="108" width="145" height="30" rx="6" fill="#22304d"/><text x="531" y="128" fill="#e2e8f0" font-size="11" text-anchor="middle">stations · arrivals/deps</text>
+  <rect x="306" y="144" width="145" height="30" rx="6" fill="#22304d"/><text x="378" y="164" fill="#e2e8f0" font-size="11" text-anchor="middle">predictions · history</text>
+  <rect x="459" y="144" width="145" height="30" rx="6" fill="#78350f"/><text x="531" y="164" fill="#fde68a" font-size="11" text-anchor="middle">data/* (X-API-Key)</text>
+  <rect x="306" y="180" width="298" height="30" rx="6" fill="#22304d"/><text x="455" y="200" fill="#e2e8f0" font-size="11" text-anchor="middle">simulator start/stop/status · health · metrics · rate limit</text>
+  <rect x="306" y="216" width="298" height="24" rx="6" fill="#0f2e2a"/><text x="455" y="232" fill="#5eead4" font-size="10" text-anchor="middle">OpenAPI/Swagger → /docs</text>
+
+  <rect x="290" y="280" width="330" height="120" rx="10" fill="#121c30" stroke="#22304d"/>
+  <text x="455" y="306" fill="#8ea0bd" font-size="13" text-anchor="middle" font-weight="600">PREDICTION ENGINE (app/engine.py)</text>
+  <rect x="306" y="318" width="145" height="34" rx="6" fill="#14532d"/><text x="378" y="332" fill="#bbf7d0" font-size="11" text-anchor="middle">sarthi-blend</text><text x="378" y="346" fill="#86efac" font-size="9" text-anchor="middle">SEC walk + OFF drift · gated</text>
+  <rect x="459" y="318" width="145" height="34" rx="6" fill="#22304d"/><text x="531" y="332" fill="#cfe3ff" font-size="11" text-anchor="middle">baseline heuristic</text><text x="531" y="346" fill="#8ea0bd" font-size="9" text-anchor="middle">spec §6 formula</text>
+  <text x="455" y="372" fill="#8ea0bd" font-size="10" text-anchor="middle">swappable via MODEL_NAME — public API unchanged (spec §11)</text>
+  <text x="455" y="388" fill="#8ea0bd" font-size="10" text-anchor="middle">confidence · uncertainty · cause attribution</text>
+
+  <!-- store -->
+  <rect x="290" y="430" width="330" height="100" rx="10" fill="#121c30" stroke="#22304d"/>
+  <text x="455" y="456" fill="#8ea0bd" font-size="13" text-anchor="middle" font-weight="600">STORE (spec §10 tables)</text>
+  <text x="455" y="480" fill="#cfe3ff" font-size="11" text-anchor="middle">trains · stations · train_routes · live_positions</text>
+  <text x="455" y="498" fill="#cfe3ff" font-size="11" text-anchor="middle">eta_predictions ⇄ actual_movements → error/MAE</text>
+  <text x="455" y="516" fill="#7fa3d0" font-size="10" text-anchor="middle">in-RAM for demo → PostgreSQL/PostGIS in Phase 4</text>
+
+  <!-- right: consumers -->
+  <rect x="680" y="70" width="190" height="230" rx="10" fill="#121c30" stroke="#22304d"/>
+  <text x="775" y="96" fill="#8ea0bd" font-size="13" text-anchor="middle" font-weight="600">CONSUMERS</text>
+  <rect x="696" y="112" width="158" height="34" rx="6" fill="#1e3a5f"/><text x="775" y="133" fill="#cfe3ff" font-size="11" text-anchor="middle">Passenger apps / NTES</text>
+  <rect x="696" y="154" width="158" height="34" rx="6" fill="#1e3a5f"/><text x="775" y="175" fill="#cfe3ff" font-size="11" text-anchor="middle">Station dashboards</text>
+  <rect x="696" y="196" width="158" height="34" rx="6" fill="#1e3a5f"/><text x="775" y="217" fill="#cfe3ff" font-size="11" text-anchor="middle">Control rooms</text>
+  <rect x="696" y="238" width="158" height="40" rx="6" fill="#0f2e2a"/><text x="775" y="255" fill="#5eead4" font-size="11" text-anchor="middle">Demo dashboard</text><text x="775" y="269" fill="#5eead4" font-size="9" text-anchor="middle">GET / (static/demo.html)</text>
+
+  <!-- arrows -->
+  <line x1="230" y1="160" x2="288" y2="160" stroke="#5b6e8f" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="230" y1="292" x2="288" y2="320" stroke="#5b6e8f" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="455" y1="250" x2="455" y2="278" stroke="#5b6e8f" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="455" y1="400" x2="455" y2="428" stroke="#5b6e8f" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="500" y1="428" x2="500" y2="402" stroke="#2dd4bf" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <line x1="620" y1="150" x2="678" y2="150" stroke="#5b6e8f" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="648" y="140" fill="#8ea0bd" font-size="9" text-anchor="middle">JSON</text>
+</svg>

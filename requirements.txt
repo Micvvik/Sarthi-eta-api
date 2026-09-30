@@ -1,0 +1,4 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+# production phase (spec §9): sqlalchemy, psycopg2-binary, redis, celery, scikit-learn, xgboost

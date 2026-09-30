@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sarthi-eta-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 run.py
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: MODEL_NAME
+        value: sarthi-blend
+      - key: INGEST_API_KEY
+        value: sarthi-demo-key

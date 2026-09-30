@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SARTHI-ETA — Dynamic ETA Demo</title>
+<style>
+:root{--bg:#0b1220;--card:#121c30;--line:#22304d;--teal:#2dd4bf;--red:#f87171;--amber:#fbbf24;--txt:#e2e8f0;--dim:#8ea0bd}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font:14px/1.45 system-ui,'Segoe UI',sans-serif;padding:18px}
+h1{font-size:18px}.sub{color:var(--dim);font-size:12px}
+header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.clock{font-size:15px;color:var(--teal);font-weight:600}
+.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.card h2{font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.big{font-size:44px;font-weight:800;letter-spacing:.02em}
+.row{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin-bottom:8px}
+.lbl{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.ok{background:#14532d;color:#86efac}.bad{background:#7f1d1d;color:#fecaca}
+.warn{background:#78350f;color:#fde68a}.info{background:#1e3a5f;color:#93c5fd}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--dim);text-align:left;font-weight:500;padding:4px 6px;border-bottom:1px solid var(--line)}
+td{padding:5px 6px;border-bottom:1px solid #1a2740}
+.ev{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid #1a2740;align-items:baseline}
+.ev .t{color:var(--dim);font-size:12px;min-width:52px}
+.up{color:var(--red);font-weight:700}.down{color:var(--teal)}
+footer{margin-top:14px;color:var(--dim);font-size:12px}
+code{background:#1a2740;padding:1px 6px;border-radius:5px;font-size:12px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>SARTHI-ETA · Real-Time Dynamic ETA API</h1>
+  <div class="sub">SIH26028 · Team TURTLEs — demo config: simulated live feeds over real historical sectional profiles (DA323)</div></div>
+  <div class="clock" id="clock">--:--</div>
+</header>
+<div class="grid">
+  <div class="card">
+    <h2 id="heroTitle">Hero train — destination ETA</h2>
+    <div class="row">
+      <div><div class="lbl">Scheduled</div><div class="big" style="color:var(--dim)" id="sched">--:--</div></div>
+      <div><div class="lbl">Predicted (live)</div><div class="big" id="pred">--:--</div></div>
+      <div><div class="lbl">Delay</div><div class="big" id="delay">--</div></div>
+      <div><div class="lbl">Confidence</div><div class="big" style="font-size:26px" id="conf">--</div></div>
+    </div>
+    <div id="heroChips"></div>
+    <div class="sub" id="heroMeta"></div>
+  </div>
+  <div class="card">
+    <h2>Operational events (spec §14 simulator)</h2>
+    <div id="events"><div class="sub">waiting…</div></div>
+  </div>
+  <div class="card" style="grid-column:1/-1">
+    <h2>All trains — live running</h2>
+    <table><thead><tr><th>Train</th><th>Name</th><th>At</th><th>Delay (min)</th><th>Status</th></tr></thead>
+    <tbody id="trains"></tbody></table>
+  </div>
+</div>
+<footer>API: <code>/api/v1/trains/{no}/eta</code> · <code>/api/v1/simulator/status</code> · Swagger at <code>/docs</code> —
+watch the hero train: predicted arrival starts at <b>10:30</b>, then congestion (~20 s) and a speed restriction (~45 s) push it later in real time.</footer>
+<script>
+const $=id=>document.getElementById(id);
+const mins2=(a,b)=>{const f=s=>{const[h,m]=s.split(':').map(Number);return h*60+m};return f(b)-f(a)};
+async function poll(){
+ try{
+  const[st,tl]=await Promise.all([
+    fetch('/api/v1/simulator/status').then(r=>r.json()),
+    fetch('/api/v1/trains').then(r=>r.json())]);
+  $('clock').textContent='SIM '+st.sim_clock+(st.running?' ▶':' ⏸');
+  const h=st.hero_demo;
+  if(h&&h.predicted_arrival){
+    $('heroTitle').textContent=`Hero train ${st.hero_train} — destination: ${h.destination}`;
+    $('sched').textContent=h.scheduled_arrival;
+    $('pred').textContent=h.predicted_arrival;
+    const d=h.predicted_delay_minutes||0;
+    $('delay').textContent=(d>0?'+':'')+d.toFixed(0)+'m';
+    $('pred').style.color=d>2?'var(--red)':'var(--teal)';
+    $('delay').className='big '+(d>2?'up':'down');
+    const eta=await fetch(`/api/v1/trains/${st.hero_train}/eta`).then(r=>r.json());
+    const dest=eta.predictions[eta.predictions.length-1];
+    $('conf').textContent=dest?Math.round(dest.confidence*100)+'%':'--';
+    const causes=new Set();eta.predictions.forEach(p=>p.causes.forEach(c=>causes.add(c.kind)));
+    $('heroChips').innerHTML=[...causes].map(c=>`<span class="chip ${c==='FOG'?'info':c==='TSR'?'warn':'bad'}">${c}</span>`).join('')||'<span class="chip ok">CLEAR RUN</span>';
+    $('heroMeta').textContent=`model: ${eta.model} · generated ${eta.prediction_generated_at} · uncertainty ±${dest?dest.uncertainty_minutes:'-'} min`;
+  }
+  const ev=$('events');let html='';
+  st.events_fired.forEach(e=>{html+=`<div class="ev"><span class="t">FIRED</span><span class="chip ${e.kind==='FOG'?'info':e.kind==='TSR'?'warn':'bad'}">${e.kind}</span><span>${e.description} · +${e.add_minutes} min on ${e.train}</span></div>`});
+  st.events_pending.forEach(e=>{html+=`<div class="ev"><span class="t">T+${e.at_s}s</span><span class="chip info">pending</span><span class="sub">${e.kind} +${e.add_minutes} min → ${e.train}</span></div>`});
+  ev.innerHTML=html||'<div class="sub">no events</div>';
+  $('trains').innerHTML=tl.trains.map(t=>`<tr><td>${t.train_number}</td><td>${t.train_name}</td><td>${t.current_station}</td><td class="${t.current_delay_minutes>2?'up':'down'}">${t.current_delay_minutes.toFixed(1)}</td><td><span class="chip ${t.status==='RUNNING'?'ok':t.status==='ARRIVED'?'info':'warn'}">${t.status}</span></td></tr>`).join('');
+ }catch(e){}
+}
+poll();setInterval(poll,2000);
+</script>
+</body>
+</html>

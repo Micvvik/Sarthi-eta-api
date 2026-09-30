@@ -1,0 +1,1849 @@
+{
+ "corridor": {
+  "origin": [
+   22.5833,
+   88.3667
+  ],
+  "dest": [
+   26.1833,
+   91.75
+  ]
+ },
+ "stations": {
+  "KOAA": {
+   "code": "KOAA",
+   "name": "KOLKATA",
+   "latitude": 22.5424,
+   "longitude": 88.3985
+  },
+  "BDC": {
+   "code": "BDC",
+   "name": "BANDEL JN",
+   "latitude": 22.752,
+   "longitude": 88.6115
+  },
+  "NDAE": {
+   "code": "NDAE",
+   "name": "NABADWIP DHAM",
+   "latitude": 25.7204,
+   "longitude": 91.3003
+  },
+  "KWAE": {
+   "code": "KWAE",
+   "name": "KATWA",
+   "latitude": 22.9098,
+   "longitude": 88.592
+  },
+  "AZ": {
+   "code": "AZ",
+   "name": "AZIMGANJ JN",
+   "latitude": 23.1073,
+   "longitude": 88.871
+  },
+  "JRLE": {
+   "code": "JRLE",
+   "name": "JANGIPUR ROAD",
+   "latitude": 23.2464,
+   "longitude": 88.8991
+  },
+  "MLDT": {
+   "code": "MLDT",
+   "name": "MALDA TOWN",
+   "latitude": 23.339,
+   "longitude": 89.1675
+  },
+  "KNE": {
+   "code": "KNE",
+   "name": "KISHANGANJ",
+   "latitude": 23.7861,
+   "longitude": 89.4239
+  },
+  "NJP": {
+   "code": "NJP",
+   "name": "NEW JALPAIGURI",
+   "latitude": 24.0176,
+   "longitude": 89.8282
+  },
+  "NCB": {
+   "code": "NCB",
+   "name": "NEW COOCH BEHAR",
+   "latitude": 24.3006,
+   "longitude": 90.0033
+  },
+  "NOQ": {
+   "code": "NOQ",
+   "name": "NEW ALIPURDAUR",
+   "latitude": 24.4671,
+   "longitude": 90.0867
+  },
+  "KOJ": {
+   "code": "KOJ",
+   "name": "KOKRAJHAR",
+   "latitude": 24.6314,
+   "longitude": 90.3591
+  },
+  "NBQ": {
+   "code": "NBQ",
+   "name": "NEW BONGAIGAON",
+   "latitude": 24.7384,
+   "longitude": 90.345
+  },
+  "GLPT": {
+   "code": "GLPT",
+   "name": "GOALPARA TOWN",
+   "latitude": 24.8813,
+   "longitude": 90.4966
+  },
+  "GHY": {
+   "code": "GHY",
+   "name": "GUWAHATI",
+   "latitude": 25.1729,
+   "longitude": 90.7652
+  },
+  "MYD": {
+   "code": "MYD",
+   "name": "MANDERDISA",
+   "latitude": 23.4877,
+   "longitude": 89.2401
+  },
+  "NHLG": {
+   "code": "NHLG",
+   "name": "NEW HAFLONG",
+   "latitude": 25.6901,
+   "longitude": 91.3182
+  },
+  "BPB": {
+   "code": "BPB",
+   "name": "BADARPUR JN",
+   "latitude": 26.004,
+   "longitude": 91.6753
+  },
+  "NKMG": {
+   "code": "NKMG",
+   "name": "NEW KARIMGANJ",
+   "latitude": 22.9481,
+   "longitude": 88.6878
+  },
+  "DMR": {
+   "code": "DMR",
+   "name": "DHARMANAGAR",
+   "latitude": 22.8348,
+   "longitude": 88.5189
+  },
+  "AGTL": {
+   "code": "AGTL",
+   "name": "AGARTALA",
+   "latitude": 22.5469,
+   "longitude": 88.2758
+  },
+  "SCL": {
+   "code": "SCL",
+   "name": "SILCHAR",
+   "latitude": 26.206,
+   "longitude": 91.7455
+  },
+  "NHGJ": {
+   "code": "NHGJ",
+   "name": "NEW HARANGAJAO",
+   "latitude": 25.9194,
+   "longitude": 91.502
+  },
+  "MBG": {
+   "code": "MBG",
+   "name": "MAIBANG",
+   "latitude": 25.7461,
+   "longitude": 91.302
+  },
+  "LMG": {
+   "code": "LMG",
+   "name": "LUMDING JN",
+   "latitude": 25.5261,
+   "longitude": 91.1965
+  },
+  "LKA": {
+   "code": "LKA",
+   "name": "LANKA",
+   "latitude": 25.3915,
+   "longitude": 90.9823
+  },
+  "HJI": {
+   "code": "HJI",
+   "name": "HOJAI",
+   "latitude": 25.3707,
+   "longitude": 90.9049
+  },
+  "KYQ": {
+   "code": "KYQ",
+   "name": "KAMAKHYA",
+   "latitude": 25.0742,
+   "longitude": 90.6668
+  },
+  "GOGH": {
+   "code": "GOGH",
+   "name": "GOSSAIGAON HAT",
+   "latitude": 24.5736,
+   "longitude": 90.2971
+  },
+  "DQG": {
+   "code": "DQG",
+   "name": "DHUPGURI",
+   "latitude": 24.2113,
+   "longitude": 89.8609
+  },
+  "AUB": {
+   "code": "AUB",
+   "name": "ALUABARI ROAD",
+   "latitude": 23.9607,
+   "longitude": 89.693
+  },
+  "BOE": {
+   "code": "BOE",
+   "name": "BARSOI JN",
+   "latitude": 23.6208,
+   "longitude": 89.3554
+  },
+  "KDPR": {
+   "code": "KDPR",
+   "name": "KUMEDPUR",
+   "latitude": 23.4726,
+   "longitude": 89.2136
+  },
+  "NH": {
+   "code": "NH",
+   "name": "NAIHATI JN",
+   "latitude": 22.6807,
+   "longitude": 88.5362
+  }
+ },
+ "trains": [
+  {
+   "number": "02501",
+   "name": "KOAA AGTL SPL",
+   "type": "Mail/Express",
+   "route": [
+    {
+     "seq": 0,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 7.0
+    },
+    {
+     "seq": 1,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 32,
+     "distance_km": 24.8,
+     "hist_delay_min": 11.0
+    },
+    {
+     "seq": 2,
+     "code": "NDAE",
+     "name": "NABADWIP DHAM",
+     "sched_offset_min": 68,
+     "distance_km": 55.0,
+     "hist_delay_min": 22.0
+    },
+    {
+     "seq": 3,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 98,
+     "distance_km": 78.9,
+     "hist_delay_min": 19.0
+    },
+    {
+     "seq": 4,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 133,
+     "distance_km": 108.30000000000001,
+     "hist_delay_min": 14.0
+    },
+    {
+     "seq": 5,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 157,
+     "distance_km": 131.4,
+     "hist_delay_min": 19.0
+    },
+    {
+     "seq": 6,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 196,
+     "distance_km": 163.7,
+     "hist_delay_min": 73.0
+    },
+    {
+     "seq": 7,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 223,
+     "distance_km": 184.79999999999998,
+     "hist_delay_min": 131.0
+    },
+    {
+     "seq": 8,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 250,
+     "distance_km": 204.6,
+     "hist_delay_min": 129.0
+    },
+    {
+     "seq": 9,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 277,
+     "distance_km": 227.5,
+     "hist_delay_min": 167.0
+    },
+    {
+     "seq": 10,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 299,
+     "distance_km": 243.4,
+     "hist_delay_min": 156.0
+    },
+    {
+     "seq": 11,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 334,
+     "distance_km": 275.9,
+     "hist_delay_min": 175.0
+    },
+    {
+     "seq": 12,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 362,
+     "distance_km": 300.7,
+     "hist_delay_min": 166.0
+    },
+    {
+     "seq": 13,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 397,
+     "distance_km": 333.7,
+     "hist_delay_min": 169.0
+    },
+    {
+     "seq": 14,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 419,
+     "distance_km": 352.0,
+     "hist_delay_min": 230.0
+    },
+    {
+     "seq": 15,
+     "code": "MYD",
+     "name": "MANDERDISA",
+     "sched_offset_min": 452,
+     "distance_km": 377.1,
+     "hist_delay_min": 262.0
+    },
+    {
+     "seq": 16,
+     "code": "NHLG",
+     "name": "NEW HAFLONG",
+     "sched_offset_min": 472,
+     "distance_km": 391.6,
+     "hist_delay_min": 262.0
+    },
+    {
+     "seq": 17,
+     "code": "BPB",
+     "name": "BADARPUR JN",
+     "sched_offset_min": 506,
+     "distance_km": 423.1,
+     "hist_delay_min": 237.0
+    },
+    {
+     "seq": 18,
+     "code": "NKMG",
+     "name": "NEW KARIMGANJ",
+     "sched_offset_min": 541,
+     "distance_km": 452.1,
+     "hist_delay_min": 247.0
+    },
+    {
+     "seq": 19,
+     "code": "DMR",
+     "name": "DHARMANAGAR",
+     "sched_offset_min": 571,
+     "distance_km": 479.6,
+     "hist_delay_min": 240.0
+    },
+    {
+     "seq": 20,
+     "code": "AGTL",
+     "name": "AGARTALA",
+     "sched_offset_min": 593,
+     "distance_km": 498.3,
+     "hist_delay_min": 227.0
+    }
+   ],
+   "run_min": [
+    27,
+    33,
+    27,
+    31,
+    21,
+    34,
+    23,
+    22,
+    25,
+    17,
+    31,
+    24,
+    30,
+    20,
+    29,
+    15,
+    30,
+    30,
+    28,
+    20
+   ]
+  },
+  {
+   "number": "02502",
+   "name": "AGTL KOAA SPL",
+   "type": "Superfast",
+   "route": [
+    {
+     "seq": 0,
+     "code": "AGTL",
+     "name": "AGARTALA",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 3.0
+    },
+    {
+     "seq": 1,
+     "code": "DMR",
+     "name": "DHARMANAGAR",
+     "sched_offset_min": 34,
+     "distance_km": 29.9,
+     "hist_delay_min": 16.0
+    },
+    {
+     "seq": 2,
+     "code": "NKMG",
+     "name": "NEW KARIMGANJ",
+     "sched_offset_min": 67,
+     "distance_km": 56.0,
+     "hist_delay_min": 18.0
+    },
+    {
+     "seq": 3,
+     "code": "BPB",
+     "name": "BADARPUR JN",
+     "sched_offset_min": 100,
+     "distance_km": 84.5,
+     "hist_delay_min": 29.0
+    },
+    {
+     "seq": 4,
+     "code": "NHLG",
+     "name": "NEW HAFLONG",
+     "sched_offset_min": 122,
+     "distance_km": 100.9,
+     "hist_delay_min": 22.0
+    },
+    {
+     "seq": 5,
+     "code": "MYD",
+     "name": "MANDERDISA",
+     "sched_offset_min": 153,
+     "distance_km": 129.3,
+     "hist_delay_min": 18.0
+    },
+    {
+     "seq": 6,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 169,
+     "distance_km": 142.8,
+     "hist_delay_min": 36.0
+    },
+    {
+     "seq": 7,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 188,
+     "distance_km": 154.9,
+     "hist_delay_min": 88.0
+    },
+    {
+     "seq": 8,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 215,
+     "distance_km": 176.0,
+     "hist_delay_min": 74.0
+    },
+    {
+     "seq": 9,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 242,
+     "distance_km": 201.3,
+     "hist_delay_min": 85.0
+    },
+    {
+     "seq": 10,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 273,
+     "distance_km": 228.20000000000002,
+     "hist_delay_min": 98.0
+    },
+    {
+     "seq": 11,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 308,
+     "distance_km": 262.8,
+     "hist_delay_min": 127.0
+    },
+    {
+     "seq": 12,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 344,
+     "distance_km": 291.7,
+     "hist_delay_min": 98.0
+    },
+    {
+     "seq": 13,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 366,
+     "distance_km": 308.2,
+     "hist_delay_min": 118.0
+    },
+    {
+     "seq": 14,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 394,
+     "distance_km": 328.9,
+     "hist_delay_min": 132.0
+    },
+    {
+     "seq": 15,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 414,
+     "distance_km": 344.5,
+     "hist_delay_min": 156.0
+    },
+    {
+     "seq": 16,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 453,
+     "distance_km": 377.7,
+     "hist_delay_min": 155.0
+    },
+    {
+     "seq": 17,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 474,
+     "distance_km": 397.5,
+     "hist_delay_min": 157.0
+    },
+    {
+     "seq": 18,
+     "code": "NDAE",
+     "name": "NABADWIP DHAM",
+     "sched_offset_min": 511,
+     "distance_km": 429.8,
+     "hist_delay_min": 162.0
+    },
+    {
+     "seq": 19,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 532,
+     "distance_km": 443.90000000000003,
+     "hist_delay_min": 166.0
+    },
+    {
+     "seq": 20,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 569,
+     "distance_km": 473.20000000000005,
+     "hist_delay_min": 165.0
+    }
+   ],
+   "run_min": [
+    32,
+    28,
+    29,
+    17,
+    27,
+    14,
+    14,
+    23,
+    23,
+    26,
+    33,
+    31,
+    18,
+    23,
+    17,
+    35,
+    18,
+    34,
+    16,
+    32
+   ]
+  },
+  {
+   "number": "02517",
+   "name": "KOAA GHY SPL",
+   "type": "Superfast",
+   "route": [
+    {
+     "seq": 0,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 19.0
+    },
+    {
+     "seq": 1,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 32,
+     "distance_km": 24.8,
+     "hist_delay_min": 26.0
+    },
+    {
+     "seq": 2,
+     "code": "NDAE",
+     "name": "NABADWIP DHAM",
+     "sched_offset_min": 68,
+     "distance_km": 55.0,
+     "hist_delay_min": 34.0
+    },
+    {
+     "seq": 3,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 98,
+     "distance_km": 78.9,
+     "hist_delay_min": 33.0
+    },
+    {
+     "seq": 4,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 133,
+     "distance_km": 108.30000000000001,
+     "hist_delay_min": 25.0
+    },
+    {
+     "seq": 5,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 157,
+     "distance_km": 131.4,
+     "hist_delay_min": 34.0
+    },
+    {
+     "seq": 6,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 196,
+     "distance_km": 163.7,
+     "hist_delay_min": 75.0
+    },
+    {
+     "seq": 7,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 223,
+     "distance_km": 184.79999999999998,
+     "hist_delay_min": 140.0
+    },
+    {
+     "seq": 8,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 250,
+     "distance_km": 204.6,
+     "hist_delay_min": 135.0
+    },
+    {
+     "seq": 9,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 277,
+     "distance_km": 227.5,
+     "hist_delay_min": 177.0
+    },
+    {
+     "seq": 10,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 299,
+     "distance_km": 243.4,
+     "hist_delay_min": 169.0
+    },
+    {
+     "seq": 11,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 334,
+     "distance_km": 275.9,
+     "hist_delay_min": 191.0
+    },
+    {
+     "seq": 12,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 362,
+     "distance_km": 300.7,
+     "hist_delay_min": 180.0
+    },
+    {
+     "seq": 13,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 397,
+     "distance_km": 333.7,
+     "hist_delay_min": 194.0
+    },
+    {
+     "seq": 14,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 419,
+     "distance_km": 352.0,
+     "hist_delay_min": 186.0
+    }
+   ],
+   "run_min": [
+    27,
+    33,
+    27,
+    31,
+    21,
+    34,
+    23,
+    22,
+    25,
+    17,
+    31,
+    24,
+    30,
+    20
+   ]
+  },
+  {
+   "number": "02518",
+   "name": "GHY KOAA SPECIAL",
+   "type": "Superfast",
+   "route": [
+    {
+     "seq": 0,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 13.0
+    },
+    {
+     "seq": 1,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 19,
+     "distance_km": 12.1,
+     "hist_delay_min": 57.0
+    },
+    {
+     "seq": 2,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 46,
+     "distance_km": 33.2,
+     "hist_delay_min": 42.0
+    },
+    {
+     "seq": 3,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 73,
+     "distance_km": 58.5,
+     "hist_delay_min": 50.0
+    },
+    {
+     "seq": 4,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 104,
+     "distance_km": 85.4,
+     "hist_delay_min": 65.0
+    },
+    {
+     "seq": 5,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 139,
+     "distance_km": 120.0,
+     "hist_delay_min": 95.0
+    },
+    {
+     "seq": 6,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 175,
+     "distance_km": 148.9,
+     "hist_delay_min": 66.0
+    },
+    {
+     "seq": 7,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 197,
+     "distance_km": 165.4,
+     "hist_delay_min": 94.0
+    },
+    {
+     "seq": 8,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 225,
+     "distance_km": 186.1,
+     "hist_delay_min": 124.0
+    },
+    {
+     "seq": 9,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 245,
+     "distance_km": 201.7,
+     "hist_delay_min": 146.0
+    },
+    {
+     "seq": 10,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 284,
+     "distance_km": 234.89999999999998,
+     "hist_delay_min": 148.0
+    },
+    {
+     "seq": 11,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 305,
+     "distance_km": 254.7,
+     "hist_delay_min": 150.0
+    },
+    {
+     "seq": 12,
+     "code": "NDAE",
+     "name": "NABADWIP DHAM",
+     "sched_offset_min": 342,
+     "distance_km": 287.0,
+     "hist_delay_min": 158.0
+    },
+    {
+     "seq": 13,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 363,
+     "distance_km": 301.1,
+     "hist_delay_min": 160.0
+    },
+    {
+     "seq": 14,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 400,
+     "distance_km": 330.40000000000003,
+     "hist_delay_min": 156.0
+    }
+   ],
+   "run_min": [
+    14,
+    23,
+    23,
+    26,
+    33,
+    31,
+    18,
+    23,
+    17,
+    35,
+    18,
+    34,
+    16,
+    32
+   ]
+  },
+  {
+   "number": "05639",
+   "name": "SCL KOAA SPECIAL",
+   "type": "Mail/Express",
+   "route": [
+    {
+     "seq": 0,
+     "code": "SCL",
+     "name": "SILCHAR",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 1.0
+    },
+    {
+     "seq": 1,
+     "code": "BPB",
+     "name": "BADARPUR JN",
+     "sched_offset_min": 23,
+     "distance_km": 19.3,
+     "hist_delay_min": 6.0
+    },
+    {
+     "seq": 2,
+     "code": "NHGJ",
+     "name": "NEW HARANGAJAO",
+     "sched_offset_min": 55,
+     "distance_km": 48.3,
+     "hist_delay_min": 14.0
+    },
+    {
+     "seq": 3,
+     "code": "NHLG",
+     "name": "NEW HAFLONG",
+     "sched_offset_min": 74,
+     "distance_km": 63.199999999999996,
+     "hist_delay_min": 18.0
+    },
+    {
+     "seq": 4,
+     "code": "MBG",
+     "name": "MAIBANG",
+     "sched_offset_min": 96,
+     "distance_km": 82.1,
+     "hist_delay_min": 27.0
+    },
+    {
+     "seq": 5,
+     "code": "LMG",
+     "name": "LUMDING JN",
+     "sched_offset_min": 130,
+     "distance_km": 109.1,
+     "hist_delay_min": 13.0
+    },
+    {
+     "seq": 6,
+     "code": "LKA",
+     "name": "LANKA",
+     "sched_offset_min": 161,
+     "distance_km": 136.2,
+     "hist_delay_min": 16.0
+    },
+    {
+     "seq": 7,
+     "code": "HJI",
+     "name": "HOJAI",
+     "sched_offset_min": 189,
+     "distance_km": 160.6,
+     "hist_delay_min": 18.0
+    },
+    {
+     "seq": 8,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 217,
+     "distance_km": 185.7,
+     "hist_delay_min": 62.0
+    },
+    {
+     "seq": 9,
+     "code": "KYQ",
+     "name": "KAMAKHYA",
+     "sched_offset_min": 241,
+     "distance_km": 204.79999999999998,
+     "hist_delay_min": 78.0
+    },
+    {
+     "seq": 10,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 266,
+     "distance_km": 226.1,
+     "hist_delay_min": 102.0
+    },
+    {
+     "seq": 11,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 293,
+     "distance_km": 247.2,
+     "hist_delay_min": 83.0
+    },
+    {
+     "seq": 12,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 320,
+     "distance_km": 272.5,
+     "hist_delay_min": 90.0
+    },
+    {
+     "seq": 13,
+     "code": "GOGH",
+     "name": "GOSSAIGAON HAT",
+     "sched_offset_min": 346,
+     "distance_km": 294.2,
+     "hist_delay_min": 105.0
+    },
+    {
+     "seq": 14,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 376,
+     "distance_km": 318.8,
+     "hist_delay_min": 109.0
+    },
+    {
+     "seq": 15,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 411,
+     "distance_km": 353.40000000000003,
+     "hist_delay_min": 130.0
+    },
+    {
+     "seq": 16,
+     "code": "DQG",
+     "name": "DHUPGURI",
+     "sched_offset_min": 429,
+     "distance_km": 366.50000000000006,
+     "hist_delay_min": 121.0
+    },
+    {
+     "seq": 17,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 448,
+     "distance_km": 380.00000000000006,
+     "hist_delay_min": 112.0
+    },
+    {
+     "seq": 18,
+     "code": "AUB",
+     "name": "ALUABARI ROAD",
+     "sched_offset_min": 474,
+     "distance_km": 402.00000000000006,
+     "hist_delay_min": 126.0
+    },
+    {
+     "seq": 19,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 509,
+     "distance_km": 435.1000000000001,
+     "hist_delay_min": 136.0
+    },
+    {
+     "seq": 20,
+     "code": "BOE",
+     "name": "BARSOI JN",
+     "sched_offset_min": 536,
+     "distance_km": 457.6000000000001,
+     "hist_delay_min": 151.0
+    },
+    {
+     "seq": 21,
+     "code": "KDPR",
+     "name": "KUMEDPUR",
+     "sched_offset_min": 561,
+     "distance_km": 476.30000000000007,
+     "hist_delay_min": 159.0
+    },
+    {
+     "seq": 22,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 599,
+     "distance_km": 510.9000000000001,
+     "hist_delay_min": 150.0
+    },
+    {
+     "seq": 23,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 619,
+     "distance_km": 526.5000000000001,
+     "hist_delay_min": 168.0
+    },
+    {
+     "seq": 24,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 658,
+     "distance_km": 559.7000000000002,
+     "hist_delay_min": 164.0
+    },
+    {
+     "seq": 25,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 679,
+     "distance_km": 579.5000000000001,
+     "hist_delay_min": 158.0
+    },
+    {
+     "seq": 26,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 719,
+     "distance_km": 612.7000000000002,
+     "hist_delay_min": 148.0
+    },
+    {
+     "seq": 27,
+     "code": "NH",
+     "name": "NAIHATI JN",
+     "sched_offset_min": 743,
+     "distance_km": 631.0000000000001,
+     "hist_delay_min": 147.0
+    },
+    {
+     "seq": 28,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 783,
+     "distance_km": 669.5000000000001,
+     "hist_delay_min": 134.0
+    }
+   ],
+   "run_min": [
+    19,
+    30,
+    14,
+    18,
+    30,
+    28,
+    24,
+    26,
+    22,
+    20,
+    23,
+    23,
+    21,
+    25,
+    33,
+    14,
+    14,
+    24,
+    31,
+    25,
+    20,
+    33,
+    17,
+    35,
+    18,
+    35,
+    20,
+    35
+   ]
+  },
+  {
+   "number": "05640",
+   "name": "KOAA SCL SPL",
+   "type": "Mail/Express",
+   "route": [
+    {
+     "seq": 0,
+     "code": "KOAA",
+     "name": "KOLKATA",
+     "sched_offset_min": 0,
+     "distance_km": 0.0,
+     "hist_delay_min": 161.0
+    },
+    {
+     "seq": 1,
+     "code": "NH",
+     "name": "NAIHATI JN",
+     "sched_offset_min": 36,
+     "distance_km": 29.3,
+     "hist_delay_min": 153.0
+    },
+    {
+     "seq": 2,
+     "code": "BDC",
+     "name": "BANDEL JN",
+     "sched_offset_min": 55,
+     "distance_km": 44.7,
+     "hist_delay_min": 165.0
+    },
+    {
+     "seq": 3,
+     "code": "KWAE",
+     "name": "KATWA",
+     "sched_offset_min": 72,
+     "distance_km": 57.5,
+     "hist_delay_min": 159.0
+    },
+    {
+     "seq": 4,
+     "code": "AZ",
+     "name": "AZIMGANJ JN",
+     "sched_offset_min": 107,
+     "distance_km": 86.9,
+     "hist_delay_min": 137.0
+    },
+    {
+     "seq": 5,
+     "code": "JRLE",
+     "name": "JANGIPUR ROAD",
+     "sched_offset_min": 131,
+     "distance_km": 110.0,
+     "hist_delay_min": 126.0
+    },
+    {
+     "seq": 6,
+     "code": "MLDT",
+     "name": "MALDA TOWN",
+     "sched_offset_min": 170,
+     "distance_km": 142.3,
+     "hist_delay_min": 149.0
+    },
+    {
+     "seq": 7,
+     "code": "KDPR",
+     "name": "KUMEDPUR",
+     "sched_offset_min": 208,
+     "distance_km": 172.5,
+     "hist_delay_min": 167.0
+    },
+    {
+     "seq": 8,
+     "code": "BOE",
+     "name": "BARSOI JN",
+     "sched_offset_min": 232,
+     "distance_km": 195.6,
+     "hist_delay_min": 165.0
+    },
+    {
+     "seq": 9,
+     "code": "KNE",
+     "name": "KISHANGANJ",
+     "sched_offset_min": 271,
+     "distance_km": 228.3,
+     "hist_delay_min": 190.0
+    },
+    {
+     "seq": 10,
+     "code": "AUB",
+     "name": "ALUABARI ROAD",
+     "sched_offset_min": 308,
+     "distance_km": 259.8,
+     "hist_delay_min": 194.0
+    },
+    {
+     "seq": 11,
+     "code": "NJP",
+     "name": "NEW JALPAIGURI",
+     "sched_offset_min": 338,
+     "distance_km": 286.5,
+     "hist_delay_min": 176.0
+    },
+    {
+     "seq": 12,
+     "code": "DQG",
+     "name": "DHUPGURI",
+     "sched_offset_min": 362,
+     "distance_km": 304.8,
+     "hist_delay_min": 172.0
+    },
+    {
+     "seq": 13,
+     "code": "NCB",
+     "name": "NEW COOCH BEHAR",
+     "sched_offset_min": 384,
+     "distance_km": 324.1,
+     "hist_delay_min": 194.0
+    },
+    {
+     "seq": 14,
+     "code": "NOQ",
+     "name": "NEW ALIPURDAUR",
+     "sched_offset_min": 406,
+     "distance_km": 340.0,
+     "hist_delay_min": 193.0
+    },
+    {
+     "seq": 15,
+     "code": "GOGH",
+     "name": "GOSSAIGAON HAT",
+     "sched_offset_min": 442,
+     "distance_km": 372.5,
+     "hist_delay_min": 210.0
+    },
+    {
+     "seq": 16,
+     "code": "KOJ",
+     "name": "KOKRAJHAR",
+     "sched_offset_min": 460,
+     "distance_km": 386.3,
+     "hist_delay_min": 226.0
+    },
+    {
+     "seq": 17,
+     "code": "NBQ",
+     "name": "NEW BONGAIGAON",
+     "sched_offset_min": 488,
+     "distance_km": 411.1,
+     "hist_delay_min": 238.0
+    },
+    {
+     "seq": 18,
+     "code": "GLPT",
+     "name": "GOALPARA TOWN",
+     "sched_offset_min": 523,
+     "distance_km": 444.1,
+     "hist_delay_min": 237.0
+    },
+    {
+     "seq": 19,
+     "code": "KYQ",
+     "name": "KAMAKHYA",
+     "sched_offset_min": 557,
+     "distance_km": 473.40000000000003,
+     "hist_delay_min": 237.0
+    },
+    {
+     "seq": 20,
+     "code": "GHY",
+     "name": "GUWAHATI",
+     "sched_offset_min": 575,
+     "distance_km": 490.50000000000006,
+     "hist_delay_min": 258.0
+    },
+    {
+     "seq": 21,
+     "code": "HJI",
+     "name": "HOJAI",
+     "sched_offset_min": 605,
+     "distance_km": 513.0,
+     "hist_delay_min": 278.0
+    },
+    {
+     "seq": 22,
+     "code": "LKA",
+     "name": "LANKA",
+     "sched_offset_min": 631,
+     "distance_km": 535.2,
+     "hist_delay_min": 281.0
+    },
+    {
+     "seq": 23,
+     "code": "LMG",
+     "name": "LUMDING JN",
+     "sched_offset_min": 656,
+     "distance_km": 556.6,
+     "hist_delay_min": 281.0
+    },
+    {
+     "seq": 24,
+     "code": "MBG",
+     "name": "MAIBANG",
+     "sched_offset_min": 693,
+     "distance_km": 588.5,
+     "hist_delay_min": 249.0
+    },
+    {
+     "seq": 25,
+     "code": "NHLG",
+     "name": "NEW HAFLONG",
+     "sched_offset_min": 712,
+     "distance_km": 601.1,
+     "hist_delay_min": 258.0
+    },
+    {
+     "seq": 26,
+     "code": "NHGJ",
+     "name": "NEW HARANGAJAO",
+     "sched_offset_min": 746,
+     "distance_km": 634.7,
+     "hist_delay_min": 264.0
+    },
+    {
+     "seq": 27,
+     "code": "BPB",
+     "name": "BADARPUR JN",
+     "sched_offset_min": 771,
+     "distance_km": 657.1,
+     "hist_delay_min": 239.0
+    },
+    {
+     "seq": 28,
+     "code": "SCL",
+     "name": "SILCHAR",
+     "sched_offset_min": 805,
+     "distance_km": 687.1,
+     "hist_delay_min": 224.0
+    }
+   ],
+   "run_min": [
+    32,
+    14,
+    14,
+    31,
+    21,
+    34,
+    33,
+    22,
+    35,
+    35,
+    25,
+    20,
+    20,
+    17,
+    31,
+    14,
+    24,
+    30,
+    32,
+    16,
+    26,
+    23,
+    21,
+    33,
+    14,
+    32,
+    21,
+    31
+   ]
+  }
+ ],
+ "sec": {
+  "KOAA>BDC": 5.5,
+  "BDC>NDAE": 9.5,
+  "NDAE>KWAE": -2.0,
+  "KWAE>AZ": -8.0,
+  "AZ>JRLE": 5.0,
+  "JRLE>MLDT": 41.0,
+  "MLDT>KNE": 53.0,
+  "KNE>NJP": -7.0,
+  "NJP>NCB": 19.0,
+  "NCB>NOQ": -5.5,
+  "NOQ>KOJ": 19.0,
+  "KOJ>NBQ": -9.0,
+  "NBQ>GLPT": 6.5,
+  "GLPT>GHY": -5.0,
+  "GHY>MYD": 32.0,
+  "MYD>NHLG": 7.5,
+  "NHLG>BPB": -17.0,
+  "BPB>NKMG": -3.0,
+  "NKMG>DMR": -8.5,
+  "DMR>AGTL": -13.0,
+  "AGTL>DMR": 13.0,
+  "DMR>NKMG": 1.0,
+  "NKMG>BPB": 7.5,
+  "BPB>NHLG": -5.0,
+  "NHLG>MYD": -7.0,
+  "MYD>GHY": 18.0,
+  "GHY>GLPT": 40.0,
+  "GLPT>NBQ": -14.5,
+  "NBQ>KOJ": 7.0,
+  "KOJ>NOQ": 13.0,
+  "NOQ>NCB": 21.0,
+  "NCB>NJP": -24.0,
+  "NJP>KNE": 15.0,
+  "KNE>MLDT": -4.0,
+  "MLDT>JRLE": 22.0,
+  "JRLE>AZ": -1.0,
+  "AZ>KWAE": 2.0,
+  "KWAE>NDAE": 6.5,
+  "NDAE>BDC": 3.0,
+  "BDC>KOAA": -2.5,
+  "SCL>BPB": 12.5,
+  "BPB>NHGJ": 8.0,
+  "NHGJ>NHLG": 4.0,
+  "NHLG>MBG": 9.0,
+  "MBG>LMG": -14.0,
+  "LMG>LKA": 3.0,
+  "LKA>HJI": 2.0,
+  "HJI>GHY": 23.5,
+  "GHY>KYQ": 3.0,
+  "KYQ>GLPT": 24.0,
+  "KOJ>GOGH": 15.0,
+  "GOGH>NOQ": 4.0,
+  "NCB>DQG": -9.0,
+  "DQG>NJP": -11.0,
+  "NJP>AUB": 14.0,
+  "AUB>KNE": 10.0,
+  "KNE>BOE": 15.0,
+  "BOE>KDPR": 8.0,
+  "KDPR>MLDT": -9.0,
+  "KWAE>BDC": -10.0,
+  "BDC>NH": -1.0,
+  "NH>KOAA": -13.0,
+  "KOAA>NH": -8.0,
+  "NH>BDC": 12.0,
+  "BDC>KWAE": -6.0,
+  "MLDT>KDPR": 18.0,
+  "KDPR>BOE": -2.0,
+  "BOE>KNE": 25.0,
+  "KNE>AUB": 4.0,
+  "AUB>NJP": -18.0,
+  "NJP>DQG": -4.0,
+  "DQG>NCB": 22.0,
+  "NOQ>GOGH": 17.0,
+  "GOGH>KOJ": 16.0,
+  "GLPT>KYQ": 0.0,
+  "KYQ>GHY": 23.0,
+  "GHY>HJI": 20.0,
+  "HJI>LKA": 3.0,
+  "LKA>LMG": 0.0,
+  "LMG>MBG": -32.0,
+  "MBG>NHLG": 9.0,
+  "NHLG>NHGJ": 6.0,
+  "NHGJ>BPB": -25.0,
+  "BPB>SCL": -46.5,
+  "KYQ>NBQ": 11.5,
+  "NBQ>NOQ": 12.0,
+  "NCB>FLK": 0.0,
+  "FLK>DQG": -2.0,
+  "MLDT>NFK": -3.0,
+  "NFK>RPH": 16.0,
+  "RPH>BHP": 11.0,
+  "BHP>BWN": -4.0,
+  "BWN>HWH": -9.0,
+  "DBRG>DBRT": -40.0,
+  "DBRT>NTSK": 6.0,
+  "NTSK>MXN": 12.0,
+  "MXN>DMV": 4.5,
+  "DMV>LMG": 3.0,
+  "LMG>CPK": 7.0,
+  "CPK>GHY": -1.5,
+  "GHY>BNGN": -2.5,
+  "BNGN>NBQ": 12.0,
+  "KOJ>NCB": 17.0,
+  "KNE>KIR": -7.5,
+  "KIR>NNA": 2.5,
+  "NNA>BJU": 7.0,
+  "BJU>PPTA": -11.0,
+  "PPTA>DNR": 7.0,
+  "DNR>DDU": -12.0,
+  "DDU>PRYJ": 43.0,
+  "PRYJ>CNB": 23.5,
+  "CNB>NDLS": 21.0,
+  "NDLS>CNB": 65.5,
+  "CNB>PRYJ": 26.0,
+  "PRYJ>DDU": 7.0,
+  "DDU>DNR": 25.5,
+  "DNR>PPTA": -7.5,
+  "PPTA>BJU": 39.5,
+  "BJU>NNA": 9.0,
+  "NNA>KIR": -9.0,
+  "KIR>KNE": 21.5,
+  "NCB>KOJ": 14.0,
+  "NBQ>GHY": 40.0,
+  "GHY>CPK": 25.0,
+  "CPK>LMG": -13.0,
+  "LMG>DMV": 17.5,
+  "DMV>MXN": -26.5,
+  "MXN>NTSK": 8.0,
+  "NTSK>DBRG": 3.0,
+  "SMVB>WFD": 16.0,
+  "WFD>KPD": 23.0,
+  "KPD>PER": 4.0,
+  "PER>BZA": 38.0,
+  "BZA>DVD": -18.0,
+  "DVD>VSKP": 8.0,
+  "VSKP>VZM": 8.0,
+  "VZM>CHE": 4.0,
+  "CHE>PSA": -4.0,
+  "PSA>BAM": 16.0,
+  "BAM>KUR": 21.5,
+  "KUR>BBS": 5.0,
+  "BBS>CTC": 1.5,
+  "CTC>BHC": -22.0,
+  "BHC>KGP": 37.0,
+  "KGP>ADL": 15.0,
+  "ADL>DKAE": 2.0,
+  "DKAE>RPH": 62.0,
+  "RPH>MLDT": 1.0,
+  "NJP>NBQ": 12.5,
+  "NBQ>KYQ": 22.0,
+  "GHY>NHLG": 21.0,
+  "DMR>ABSA": -10.0,
+  "ABSA>AGTL": -38.0,
+  "AGTL>ABSA": 12.5,
+  "ABSA>DMR": -2.0,
+  "NHLG>GHY": -5.0,
+  "NBQ>NJP": 20.5,
+  "MLDT>RPH": 31.0,
+  "RPH>DKAE": 13.0,
+  "DKAE>ADL": 3.0,
+  "ADL>KGP": 17.0,
+  "KGP>BHC": 4.0,
+  "BHC>CTC": 35.0,
+  "CTC>BBS": 8.0,
+  "BBS>KUR": 9.5,
+  "KUR>BAM": 23.0,
+  "BAM>PSA": -34.0,
+  "PSA>CHE": 13.0,
+  "CHE>VZM": 10.0,
+  "VZM>VSKP": 6.5,
+  "VSKP>DVD": -3.0,
+  "DVD>BZA": 59.0,
+  "BZA>PER": 36.0,
+  "PER>KPD": -13.0,
+  "KPD>WFD": 12.0,
+  "WFD>SMVB": -29.0,
+  "LTT>TNA": 5.0,
+  "TNA>KYN": 4.0,
+  "KYN>NK": 6.0,
+  "NK>MMR": 7.0,
+  "MMR>JL": 12.0,
+  "JL>BSL": -3.0,
+  "BSL>KNW": -9.0,
+  "KNW>ET": 9.0,
+  "ET>JBP": 8.0,
+  "JBP>KTE": 11.0,
+  "KTE>STA": 8.0,
+  "STA>PCOI": 25.0,
+  "PCOI>MZP": 11.0,
+  "MZP>DDU": -26.0,
+  "PPTA>HJP": -6.0,
+  "HJP>BJU": 23.0,
+  "BJU>BGS": 1.0,
+  "BGS>KGG": 5.0,
+  "KGG>NNA": 9.0,
+  "NCB>NBQ": -7.0,
+  "NBQ>RNY": 43.0,
+  "RNY>KYQ": -20.0,
+  "CPK>HJI": -7.0,
+  "HJI>MYD": 20.0,
+  "BPB>DMR": -28.0,
+  "DMR>BPB": 13.0,
+  "MYD>HJI": 17.0,
+  "HJI>CPK": 37.0,
+  "KYQ>RNY": 19.0,
+  "RNY>BNGN": 71.0,
+  "NBQ>NCB": 26.0,
+  "NNA>KGG": 9.0,
+  "KGG>BGS": 7.0,
+  "BGS>BJU": 25.0,
+  "BJU>HJP": -39.0,
+  "HJP>PPTA": -11.0,
+  "DDU>MZP": 19.0,
+  "MZP>PCOI": 18.0,
+  "PCOI>STA": 55.0,
+  "STA>KTE": 17.0,
+  "KTE>JBP": 12.0,
+  "JBP>ET": -17.0,
+  "ET>KNW": 3.0,
+  "KNW>BSL": 9.0,
+  "BSL>JL": -3.0,
+  "JL>MMR": 25.0,
+  "MMR>NK": 9.0,
+  "NK>KYN": 22.0,
+  "KYN>TNA": 18.5,
+  "TNA>LTT": -57.5,
+  "KOAA>BWN": 14.0,
+  "BWN>BHP": 3.0,
+  "BHP>RPH": 20.0,
+  "MLDT>NJP": 13.0,
+  "NOQ>FKM": 1.0,
+  "FKM>NBQ": -24.0,
+  "GHY>JID": 10.0,
+  "JID>CPK": 7.0,
+  "CPK>NGAN": -6.0,
+  "NGAN>JKB": -1.0,
+  "JKB>SHTT": -14.0,
+  "SHTT>JKB": 0.0,
+  "JKB>NGAN": 1.0,
+  "NGAN>CPK": 6.0,
+  "CPK>JID": 3.0,
+  "JID>GHY": -11.0,
+  "NBQ>FKM": 12.0,
+  "FKM>NOQ": 8.0,
+  "NJP>MLDT": -3.0,
+  "BWN>KOAA": -12.0,
+  "NHLG>LMG": 6.0,
+  "LMG>GHY": -14.0,
+  "NJP>KIR": -10.0,
+  "KIR>BJU": 19.0,
+  "PPTA>DDU": 2.0,
+  "DDU>PPTA": 28.0,
+  "BJU>KIR": -34.0,
+  "KIR>NJP": 19.5,
+  "GHY>LMG": 27.0,
+  "LMG>NHLG": -15.5,
+  "DMR>PTKD": 1.0,
+  "PTKD>NKMG": -2.0,
+  "LMG>HJI": -1.0,
+  "HJI>JID": 5.0,
+  "GHY>NBQ": 12.0,
+  "NDLS>SSB": 33.0,
+  "SSB>ROK": 10.0,
+  "ROK>BNW": 14.0,
+  "BNW>HSR": 6.0,
+  "HSR>ADR": 3.0,
+  "ADR>SSA": -17.0,
+  "SSA>KNL": 9.0,
+  "KNL>BTI": -57.0,
+  "BTI>KKP": 23.0,
+  "KKP>FDK": 3.0,
+  "FDK>FZR": -24.0,
+  "FZR>FDK": 9.0,
+  "FDK>KKP": 2.0,
+  "KKP>BTI": -13.0,
+  "BTI>KNL": 17.0,
+  "KNL>SSA": -14.0,
+  "SSA>ADR": 13.0,
+  "ADR>HSR": -9.0,
+  "HSR>BNW": 4.0,
+  "BNW>ROK": -5.0,
+  "ROK>SSB": 9.0,
+  "SSB>NDLS": -3.0,
+  "JID>HJI": 19.0,
+  "HJI>LMG": 25.0,
+  "NKMG>PTKD": -4.0,
+  "PTKD>DMR": 7.0,
+  "BPB>HJI": -1.0,
+  "GHY>RNY": 4.0,
+  "RNY>BPRD": 14.0,
+  "BPRD>NJP": 4.0,
+  "MLDT>BGP": -3.0,
+  "BGP>JMP": 0.0,
+  "JMP>PNBE": 2.0,
+  "PNBE>KIR": 12.0,
+  "DDU>CNB": 39.0,
+  "CNB>ANVT": 9.0,
+  "DBRG>MRHT": 10.5,
+  "MRHT>SLGR": -1.0,
+  "SLGR>MXN": 2.0,
+  "KIR>SPJ": -5.0,
+  "SPJ>MFP": 6.0,
+  "MFP>HJP": -2.0,
+  "HJP>CPR": -5.0,
+  "CPR>BUI": 10.0,
+  "BUI>BSB": -7.0,
+  "BSB>LKO": 3.0,
+  "LKO>BE": 8.0,
+  "BE>MB": -3.0,
+  "MB>NDLS": 4.0,
+  "NDLS>MB": 10.0,
+  "MB>BE": 19.0,
+  "BE>LKO": 5.0,
+  "LKO>BSB": -1.0,
+  "BSB>BUI": 13.0,
+  "BUI>CPR": 6.0,
+  "CPR>HJP": -3.0,
+  "HJP>MFP": 7.0,
+  "MFP>SPJ": -5.0,
+  "SPJ>KIR": -4.0,
+  "MXN>SLGR": 6.0,
+  "SLGR>MRHT": -2.0,
+  "MRHT>DBRG": 1.0,
+  "SMVB>KJM": 16.0,
+  "KJM>BWT": 8.0,
+  "BWT>JTJ": -12.0,
+  "JTJ>KPD": -4.0,
+  "PER>NLR": 21.0,
+  "NLR>OGL": 4.0,
+  "OGL>BZA": 3.0,
+  "BZA>RJY": 36.0,
+  "RJY>VSKP": 16.0,
+  "VZM>BAM": -7.0,
+  "CTC>BLS": 22.0,
+  "BLS>KGP": 14.0,
+  "KGP>DKAE": 11.0,
+  "DKAE>BHP": 41.0,
+  "NJP>JPE": -14.0,
+  "JPE>NCB": 20.0,
+  "NOQ>NBQ": -19.0,
+  "LMG>DPU": 9.0,
+  "DPU>DMV": 8.0,
+  "DMV>FKG": -15.0,
+  "FKG>MXN": -33.0,
+  "SLGR>SRTN": -10.0,
+  "SRTN>MRHT": -1.0,
+  "DBRG>NTSK": -11.0,
+  "MRHT>SRTN": -4.0,
+  "SRTN>SLGR": -2.0,
+  "MXN>FKG": -10.0,
+  "FKG>DMV": 25.0,
+  "DMV>DPU": 2.0,
+  "DPU>LMG": -9.0,
+  "NCB>JPE": -19.0,
+  "JPE>NJP": -8.0,
+  "BHP>DKAE": 25.0,
+  "DKAE>KGP": 9.5,
+  "KGP>BLS": 1.0,
+  "BLS>CTC": 24.0,
+  "BAM>VZM": -7.0,
+  "VSKP>RJY": 33.0,
+  "RJY>BZA": 17.0,
+  "BZA>OGL": 9.0,
+  "OGL>NLR": 12.0,
+  "NLR>PER": 14.0,
+  "KPD>JTJ": 2.0,
+  "JTJ>KJM": 1.0,
+  "KJM>SMVB": -41.0,
+  "NBQ>APDJ": 26.0,
+  "APDJ>HSA": -5.0,
+  "HSA>SGUJ": -7.0,
+  "SGUJ>NJP": 11.0,
+  "MLDT>PKR": 2.0,
+  "PKR>RPH": 4.0,
+  "BWN>DKAE": 14.0,
+  "KGP>TATA": 35.0,
+  "TATA>CKP": 16.0,
+  "CKP>ROU": 24.0,
+  "ROU>JSG": 14.0,
+  "JSG>RIG": 20.0,
+  "RIG>KHS": -56.0,
+  "KHS>BSP": 77.0,
+  "BSP>R": 22.0,
+  "R>G": 37.0,
+  "G>NGP": 9.0,
+  "NGP>AK": -16.0,
+  "AK>BSL": 20.0,
+  "BSL>MMR": 21.0,
+  "MMR>KYN": 23.0
+ },
+ "off": {
+  "1": 6.0,
+  "2": 11.0,
+  "3": 16.0,
+  "4": 21.0,
+  "5": 28.0,
+  "6": 34.0,
+  "7": 45.0,
+  "8": 51.0,
+  "9": 61.0,
+  "10": 69.5,
+  "11": 78.0,
+  "12": 89.0,
+  "13": 96.0,
+  "14": 107.5,
+  "15": 115.0,
+  "16": 121.0,
+  "17": 135.0
+ },
+ "source": "DA323 public IR delay dataset (42 trains, Mar23-Mar24)"
+}
