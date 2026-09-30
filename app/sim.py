@@ -44,6 +44,7 @@ class Simulator:
         self.run_start = time.time()
         self.banked_s = 0.0
         self._last_bucket = -1
+        self._arr_el = None
         self._prev_pos = {}
         self._build()
 
@@ -84,6 +85,7 @@ class Simulator:
     def start(self, reset: bool = True):
         if reset:
             self.banked_s = 0.0
+            self._arr_el = None
             self._build()
             STORE.reset_run_data()
             self._last_bucket = -1
@@ -110,6 +112,13 @@ class Simulator:
     # ---------- per-request update ----------
     def tick(self):
         el = self.elapsed()
+        # auto-replay: 12 s after the hero train arrives, restart the demo story
+        if self.state[HERO]["arrived"] and self.running:
+            if self._arr_el is None:
+                self._arr_el = el
+            elif el - self._arr_el > 12:
+                self.start(reset=True)
+                el = self.elapsed()
         m = get_model()
         for no, rt in NETWORK.trains.items():
             st = self.state[no]
