@@ -104,7 +104,7 @@ Back-test on DA323 (42 trains, leave-one-train-out):
 
 ## Tests (spec §16)
 
-`tests/test_api.py` — 13 integration tests: endpoint contracts, spec §20 10:30 demo
+`tests/test_api.py` — 14 integration tests: endpoint contracts, spec §20 10:30 demo
 invariant, auth 401, validation 422, simulator start/stop, prediction store/history.
 
 ## Deliverable map (spec §17)
