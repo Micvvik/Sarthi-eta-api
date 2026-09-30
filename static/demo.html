@@ -35,7 +35,10 @@ code{background:#1a2740;padding:1px 6px;border-radius:5px;font-size:12px}
 <header>
   <div><h1>SARTHI-ETA · Real-Time Dynamic ETA API</h1>
   <div class="sub">SIH26028 · Team TURTLEs — demo config: simulated live feeds over real historical sectional profiles (DA323)</div></div>
-  <div class="clock" id="clock">--:--</div>
+  <div style="display:flex;gap:12px;align-items:center">
+    <button onclick="restart()" style="background:#14532d;color:#bbf7d0;border:1px solid #2dd4bf;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer">↻ Restart demo</button>
+    <div class="clock" id="clock">--:--</div>
+  </div>
 </header>
 <div class="grid">
   <div class="card">
@@ -63,7 +66,7 @@ code{background:#1a2740;padding:1px 6px;border-radius:5px;font-size:12px}
 watch the hero train: predicted arrival starts at <b>10:30</b>, then congestion (~20 s) and a speed restriction (~45 s) push it later in real time.</footer>
 <script>
 const $=id=>document.getElementById(id);
-const mins2=(a,b)=>{const f=s=>{const[h,m]=s.split(':').map(Number);return h*60+m};return f(b)-f(a)};
+async function restart(){await fetch('/api/v1/simulator/start',{method:'POST'});poll();}
 async function poll(){
  try{
   const[st,tl]=await Promise.all([
@@ -71,7 +74,12 @@ async function poll(){
     fetch('/api/v1/trains').then(r=>r.json())]);
   $('clock').textContent='SIM '+st.sim_clock+(st.running?' ▶':' ⏸');
   const h=st.hero_demo;
-  if(h&&h.predicted_arrival){
+  if(!h||!h.predicted_arrival){
+    $('heroTitle').textContent=`Hero train ${st.hero_train} — arrived 🏁`;
+    $('sched').textContent='--:--';$('pred').textContent='🏁';$('delay').textContent='done';$('conf').textContent='—';
+    $('heroChips').innerHTML='<span class="chip info">demo auto-restarts in a few seconds…</span>';
+    $('heroMeta').textContent='or press ↻ Restart demo';
+  } else {
     $('heroTitle').textContent=`Hero train ${st.hero_train} — destination: ${h.destination}`;
     $('sched').textContent=h.scheduled_arrival;
     $('pred').textContent=h.predicted_arrival;
